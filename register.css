@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(vecteezy_abstract-gradient-pastel-blue-and-purple-background-neon_8617161-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1000px;
+}
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+.content{
+    padding-right: 35px;
+    padding-left: 35px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    min-height: 100px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(26, 23, 48, .5);
+
+}
+header nav {
+    display: flex;
+    flex:1;
+    justify-content: flex-end;
+
+}
+header nav ul {
+    display: flex;
+}
+header nav ul li {
+    list-style: none;
+    display: flex;
+    padding: 20px;
+
+}
+header nav ul li a {
+    text-decoration:none;
+color: black;
+}
+/*.content::after{
+    content: '';
+    width: calc(100% - 70px);
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+
+}*/
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   min-height: 100vh;
+
+}
+.form{
+   
+    width: 50%;
+    height: 600px;
+    border: 1px solid rgba(0, 0, 0, 0.295);
+    box-shadow: 0 0 10px rgba(26, 23, 48, .5);
+    position: relative;
+    top: 150px;
+    backdrop-filter: blur(20px);
+}
+h2{
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 88px;
+    font-size: 38px;
+}
+.user , .password , .email{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 30px;
+    overflow: hidden;
+display: flex;
+justify-content: center;
+position: relative;
+}
+input{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.295);
+    outline: none;
+    text-overflow:clip;
+    padding: 5px;
+    background: transparent;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: 0.5s;
+  
+}
+input::placeholder{
+    padding-left: 20px;
+}
+i{
+    position: relative;
+    right: 22px;
+    top: 80%;
+    transform: translateY(-50%);
+  
+    
+}
+.botton{
+display: flex;
+justify-content: center;
+}
+.botton  button{
+width: 50%;
+position: relative;
+top: 50px;
+border: 1px solid rgba(0, 0, 0, 0.295);
+border-radius: 30px;
+height: 47px;
+background-color: white;
+transition: 0.3s;
+}
+.inside{
+    padding-top: 20px;
+    
+}
+
+.botton button:hover{
+    background-color: black;
+    color: white;
+}
+input:focus{
+border: 1.5px solid black;
+}
+.user:invalid{
+    border: 1px solid red;
+
+}
+
+
+@media screen and (orientation: landscape){
+    .content{
+        width: 60%;
+    }
+}
+
